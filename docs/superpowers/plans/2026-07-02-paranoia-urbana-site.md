@@ -105,7 +105,7 @@ Expected: completes with no errors, creates `node_modules/` and `package-lock.js
 - [ ] **Step 7: Verify the dev server boots**
 
 Run: `npm run build`
-Expected: `dist/paranoia-urbana/index.html` is created, build exits 0.
+Expected: `dist/index.html` is created, build exits 0.
 
 - [ ] **Step 8: Commit**
 
@@ -462,9 +462,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 - [ ] **Step 5: Verify the build succeeds**
 
 Run: `npm run build`
-Expected: exits 0, `dist/paranoia-urbana/index.html` contains the string `PARANOIA URBANA`.
+Expected: exits 0, `dist/index.html` contains the string `PARANOIA URBANA`.
 
-Run: `grep -o "PARANOIA URBANA" dist/paranoia-urbana/index.html`
+Run: `grep -o "PARANOIA URBANA" dist/index.html`
 Expected: prints `PARANOIA URBANA` at least once.
 
 - [ ] **Step 6: Commit**
@@ -923,7 +923,7 @@ const items = (await getCollection('shows')).sort(
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "Nenhum show cadastrado" dist/paranoia-urbana/agenda/index.html`
+Run: `grep -o "Nenhum show cadastrado" dist/agenda/index.html`
 Expected: prints `Nenhum show cadastrado`.
 
 - [ ] **Step 3: Commit**
@@ -982,7 +982,7 @@ const base = import.meta.env.BASE_URL;
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "libertária antifascista" dist/paranoia-urbana/quem-somos/index.html`
+Run: `grep -o "libertária antifascista" dist/quem-somos/index.html`
 Expected: prints `libertária antifascista`.
 
 - [ ] **Step 3: Commit**
@@ -1069,7 +1069,7 @@ uma das melhores bandas de Thrash, não apenas do Brasil, mas do mundo!
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "United for Thrash" dist/paranoia-urbana/resenhas/violator-united-for-thrash/index.html`
+Run: `grep -o "United for Thrash" dist/resenhas/violator-united-for-thrash/index.html`
 Expected: prints `United for Thrash`.
 
 - [ ] **Step 4: Commit**
@@ -1149,7 +1149,7 @@ Tamo junto sempre! Se mantenha punk, barulho não música, Palestina livre e
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "Discharge é a influência máxima" dist/paranoia-urbana/entrevistas/odiar/index.html`
+Run: `grep -o "Discharge é a influência máxima" dist/entrevistas/odiar/index.html`
 Expected: prints `Discharge é a influência máxima`.
 
 - [ ] **Step 3: Commit**
@@ -1243,10 +1243,10 @@ Queremos viver, não apenas sobreviver!
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "ideologia libertária antifascista" dist/paranoia-urbana/colunas/reflexao/index.html`
+Run: `grep -o "ideologia libertária antifascista" dist/colunas/reflexao/index.html`
 Expected: prints `ideologia libertária antifascista`.
 
-Run: `grep -o "Queremos viver" dist/paranoia-urbana/colunas/queremos-viver/index.html`
+Run: `grep -o "Queremos viver" dist/colunas/queremos-viver/index.html`
 Expected: prints `Queremos viver`.
 
 - [ ] **Step 4: Commit**
@@ -1315,10 +1315,10 @@ punks da época, reúne algumas dessas inúmeras experiências de luta.
 Run: `npm run build`
 Expected: exits 0.
 
-Run: `grep -o "Gracielle Fonseca" dist/paranoia-urbana/documentarios/mulheres-no-metal/index.html`
+Run: `grep -o "Gracielle Fonseca" dist/documentarios/mulheres-no-metal/index.html`
 Expected: prints `Gracielle Fonseca`.
 
-Run: `grep -o "anarcopunk" dist/paranoia-urbana/documentarios/viver-para-lutar/index.html`
+Run: `grep -o "anarcopunk" dist/documentarios/viver-para-lutar/index.html`
 Expected: prints `anarcopunk`.
 
 - [ ] **Step 4: Commit**
@@ -1341,7 +1341,7 @@ Expected: exits 0.
 
 - [ ] **Step 2: Verify the home page lists all 7 articles**
 
-Run: `grep -oE "article-card" dist/paranoia-urbana/index.html | wc -l`
+Run: `grep -oE "article-card" dist/index.html | wc -l`
 Expected: `7` (2 reviews + 1 interview + 2 columns + 2 documentaries).
 
 - [ ] **Step 3: Verify the site builds cleanly from scratch**
