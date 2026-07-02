@@ -1,0 +1,139 @@
+:root {
+  --bg: #0a0a0a;
+  --fg: #eaeaea;
+  --muted: #999;
+  --rule: #444;
+  --rule-strong: #fff;
+  --font-headline: Georgia, 'Times New Roman', serif;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+a:hover {
+  border-bottom-color: var(--fg);
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 3px solid var(--rule-strong);
+}
+
+.site-header img.logo {
+  height: 56px;
+  width: auto;
+}
+
+.site-title {
+  font-family: var(--font-headline);
+  font-weight: 900;
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.site-nav {
+  margin-left: auto;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.article-card {
+  border-top: 1px solid var(--rule);
+  padding-top: 10px;
+}
+
+.article-card .kicker {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--muted);
+}
+
+.article-card h3 {
+  font-family: var(--font-headline);
+  font-size: 20px;
+  margin: 4px 0 8px;
+}
+
+.article-card p {
+  font-size: 14px;
+  color: var(--fg);
+}
+
+.article-list {
+  list-style: none;
+  padding: 0;
+}
+
+.article-list li {
+  border-bottom: 1px solid var(--rule);
+  padding: 12px 0;
+}
+
+.article-body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.article-body h1 {
+  font-family: var(--font-headline);
+  font-size: 32px;
+}
+
+.article-meta {
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.links-list {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+}
+
+.site-footer {
+  border-top: 3px solid var(--rule-strong);
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
