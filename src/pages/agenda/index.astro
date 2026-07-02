@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const items = (await getCollection('shows')).sort(
+  (a, b) => a.data.date.valueOf() - b.data.date.valueOf()
+);
+---
+<BaseLayout title="Agenda">
+  <h2>Agenda de Shows</h2>
+  {items.length === 0 ? (
+    <p>Nenhum show cadastrado no momento. Fique de olho no <a href="https://www.instagram.com/paranoiaurbana/" target="_blank" rel="noopener">Instagram</a>.</p>
+  ) : (
+    <ul class="article-list">
+      {items.map((item) => (
+        <li>
+          <p class="kicker">{item.data.date.toLocaleDateString('pt-BR')}</p>
+          <h3>{item.data.band}</h3>
+          <p>{item.data.venue} &mdash; {item.data.city}</p>
+          {item.data.link && <a href={item.data.link} target="_blank" rel="noopener">Mais informações</a>}
+        </li>
+      ))}
+    </ul>
+  )}
+</BaseLayout>
