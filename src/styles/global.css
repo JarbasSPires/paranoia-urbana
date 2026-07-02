@@ -107,13 +107,13 @@ a:hover {
 
 .article-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 8px 16px;
 }
 
 .article-card {
   border-top: 1px solid var(--rule);
-  padding-top: 10px;
+  padding-top: 6px;
 }
 
 .hero-logo {
@@ -139,13 +139,15 @@ a:hover {
 
 .article-card h3 {
   font-family: var(--font-headline);
-  font-size: 20px;
-  margin: 4px 0 8px;
+  font-size: 18px;
+  margin: 3px 0 5px;
+  line-height: 1.2;
 }
 
 .article-card p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--fg);
+  margin: 0;
 }
 
 .article-list {
