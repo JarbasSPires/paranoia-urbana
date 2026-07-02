@@ -32,6 +32,9 @@ const allItems = sections
 ---
 <BaseLayout title="Home">
   <div class="article-grid">
+    <div class="hero-logo">
+      <img src={`${base}logo.png`} alt="Paranoia Urbana" />
+    </div>
     {allItems.map((item) => (
       <article class="article-card">
         <p class="kicker">{item.kicker}</p>
