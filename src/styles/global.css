@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Discharge';
+  src: url('/paranoia-urbana/fonts/discharge.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #0a0a0a;
   --fg: #eaeaea;
@@ -6,6 +14,7 @@
   --rule-strong: #fff;
   --font-headline: Georgia, 'Times New Roman', serif;
   --font-body: Arial, Helvetica, sans-serif;
+  --font-title: 'Discharge', var(--font-headline);
 }
 
 * {
@@ -44,7 +53,7 @@ a:hover {
 }
 
 .site-title {
-  font-family: var(--font-headline);
+  font-family: var(--font-title);
   font-weight: 900;
   font-size: 28px;
   letter-spacing: 1px;
