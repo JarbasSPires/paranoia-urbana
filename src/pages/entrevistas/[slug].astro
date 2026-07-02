@@ -17,7 +17,7 @@ const base = import.meta.env.BASE_URL;
     <h1>{entry!.data.title}</h1>
     <p class="article-meta">
       {entry!.data.band && <>{entry!.data.band} &middot; </>}
-      {entry!.data.date.toLocaleDateString('pt-BR')}
+      {entry!.data.date.toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
     </p>
     {entry!.data.cover && (
       <img src={`${base}covers/${entry!.data.cover}`} alt={entry!.data.title} style="max-width:100%" />
