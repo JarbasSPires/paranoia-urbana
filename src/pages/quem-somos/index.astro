@@ -4,14 +4,14 @@ const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title="Quem Somos">
   <article class="article-body">
-    <h1>Quem Somos</h1>
+    <h1 data-i18n="about.heading">Quem Somos</h1>
     <img src={`${base}logo.png`} alt="Paranoia Urbana" style="max-width:280px" />
-    <p>
+    <p data-i18n="about.p1">
       Paranoia Urbana é um zine digital e impresso de metal e punk (d-beat,
       raw punk, crust, thrash), iniciativa da Samamba Thrash. Trazemos
       entrevistas, resenhas, colunas e cobertura do underground.
     </p>
-    <p>
+    <p data-i18n="about.p2">
       Este zine não pertence apenas a quem o edita, mas a todos que fazem a
       cena. Qualquer pessoa pode enviar textos, sugerir entrevistas ou
       resenhas. Nosso objetivo é promover a união entre punks e bangers —
@@ -26,7 +26,7 @@ const base = import.meta.env.BASE_URL;
       </a>
     </p>
     <p>
-      <strong>Contato:</strong> <a href="mailto:jarbas.spires@gmail.com">jarbas.spires@gmail.com</a>
+      <strong data-i18n="about.contact.label">Contato:</strong> <a href="mailto:jarbas.spires@gmail.com">jarbas.spires@gmail.com</a>
     </p>
   </article>
 </BaseLayout>

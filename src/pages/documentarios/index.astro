@@ -8,7 +8,7 @@ const items = (await getCollection('documentaries')).sort(
 );
 ---
 <BaseLayout title="Documentários">
-  <h2>Documentários</h2>
+  <h2 data-i18n="documentaries.heading">Documentários</h2>
   <ul class="article-list">
     {items.map((item) => (
       <li>

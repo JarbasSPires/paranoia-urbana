@@ -63,11 +63,40 @@ a:hover {
 .site-nav {
   margin-left: auto;
   display: flex;
+  align-items: center;
   gap: 14px;
   flex-wrap: wrap;
   font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+}
+
+.lang-switch {
+  display: flex;
+  gap: 6px;
+  margin-left: 8px;
+}
+
+.lang-switch button {
+  background: none;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 2px 8px;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  color: var(--fg);
+}
+
+.lang-switch button.active {
+  color: var(--bg);
+  background: var(--fg);
+  border-color: var(--fg);
 }
 
 .container {

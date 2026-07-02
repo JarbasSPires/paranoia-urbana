@@ -8,7 +8,7 @@ const items = (await getCollection('columns')).sort(
 );
 ---
 <BaseLayout title="Colunas">
-  <h2>Colunas</h2>
+  <h2 data-i18n="columns.heading">Colunas</h2>
   <ul class="article-list">
     {items.map((item) => (
       <li>
