@@ -55,7 +55,8 @@ a:hover {
 .site-title {
   font-family: var(--font-title);
   font-weight: 900;
-  font-size: 28px;
+  font-size: 56px;
+  line-height: 1;
   letter-spacing: 1px;
   margin: 0;
 }
