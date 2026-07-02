@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const items = (await getCollection('reviews')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+<BaseLayout title="Resenhas">
+  <h2>Resenhas</h2>
+  <ul class="article-list">
+    {items.map((item) => (
+      <li>
+        <p class="kicker">{item.data.band ?? 'Resenha'}</p>
+        <h3><a href={`${base}resenhas/${item.slug}/`}>{item.data.title}</a></h3>
+        <p>{item.data.summary}</p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
