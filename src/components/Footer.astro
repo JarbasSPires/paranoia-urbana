@@ -1,8 +1,27 @@
 <footer class="site-footer">
   <p data-i18n="footer.tagline">Paranoia Urbana &mdash; Zine Digital e Impresso &mdash; Iniciativa Samamba Thrash!</p>
+  <p class="footer-clock">
+    <span>Horário local &mdash; Brasília</span>
+    <span id="bsb-clock">--:--:--</span>
+    <span>BRT &mdash; UTC-3</span>
+  </p>
   <p>
     <a href="https://www.instagram.com/paranoiaurbana/" target="_blank" rel="noopener">Instagram</a>
     &middot;
     <a href="mailto:jarbas.spires@gmail.com">jarbas.spires@gmail.com</a>
   </p>
+  <p class="footer-copyright">&copy; {new Date().getFullYear()} Paranoia Urbana. Todos os direitos reservados.</p>
 </footer>
+
+<script>
+  function updateBsbClock() {
+    const el = document.getElementById('bsb-clock');
+    if (!el) return;
+    el.textContent = new Date().toLocaleTimeString('pt-BR', {
+      timeZone: 'America/Sao_Paulo',
+      hour12: false,
+    });
+  }
+  updateBsbClock();
+  setInterval(updateBsbClock, 1000);
+</script>

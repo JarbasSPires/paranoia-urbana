@@ -12,9 +12,11 @@
   --muted: #999;
   --rule: #444;
   --rule-strong: #fff;
+  --accent: #c3d825;
   --font-headline: Georgia, 'Times New Roman', serif;
   --font-body: Arial, Helvetica, sans-serif;
   --font-title: 'Discharge', var(--font-headline);
+  --font-display: 'Arial Black', Arial, sans-serif;
 }
 
 * {
@@ -191,4 +193,197 @@ a:hover {
   font-size: 13px;
   color: var(--muted);
   text-align: center;
+}
+
+.footer-clock {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.footer-clock #bsb-clock {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.footer-copyright {
+  font-size: 11px;
+  margin-top: 8px;
+  color: var(--rule);
+}
+
+/* Hero */
+
+.hero-section {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 20px;
+  background-size: cover;
+  background-position: center 25%;
+  border-bottom: 3px solid var(--rule-strong);
+}
+
+.hero-eyebrow {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 12px;
+}
+
+.hero-heading {
+  font-family: var(--font-title);
+  font-size: clamp(48px, 11vw, 130px);
+  line-height: 0.9;
+  margin: 0;
+  color: var(--fg);
+}
+
+.hero-tagline {
+  margin: 18px 0 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-explore {
+  margin-top: 26px;
+  display: inline-block;
+  width: fit-content;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* Ticker */
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 3px solid var(--rule-strong);
+  background: #050505;
+  padding: 10px 0;
+}
+
+.ticker-track {
+  display: inline-block;
+  padding-left: 100%;
+  animation: ticker-scroll 45s linear infinite;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Section labels shared by home page sections */
+
+.section-label {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 40px 0 4px;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(32px, 6vw, 64px);
+  line-height: 1;
+  margin: 0 0 24px;
+}
+
+/* Dossiê grid (home page featured content with photos) */
+
+.dossie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.dossie-card {
+  position: relative;
+  display: block;
+  border: 1px solid var(--rule);
+  color: var(--fg);
+}
+
+.dossie-card:hover {
+  border-color: var(--fg);
+}
+
+.dossie-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(60%) contrast(1.1);
+}
+
+.dossie-card .kicker {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--bg);
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  margin: 0;
+}
+
+.dossie-card-body {
+  padding: 14px;
+}
+
+.dossie-card-body h3 {
+  font-family: var(--font-headline);
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+
+.dossie-card-body p {
+  font-size: 13px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.about-teaser-text {
+  max-width: 640px;
+  font-size: 15px;
+}
+
+.poem-section {
+  padding-bottom: 40px;
+}
+
+.poem-body {
+  max-width: 640px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.poem-body p {
+  margin: 0 0 10px;
 }
