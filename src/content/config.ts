@@ -2,8 +2,10 @@ import { defineCollection, z } from 'astro:content';
 
 const articleSchema = z.object({
   title: z.string(),
+  titleEn: z.string().optional(),
   date: z.date(),
   summary: z.string(),
+  summaryEn: z.string().optional(),
   band: z.string().optional(),
   cover: z.string().optional(),
   links: z.array(z.object({ label: z.string(), url: z.string() })).optional(),

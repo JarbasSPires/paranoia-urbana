@@ -22,6 +22,16 @@
         'Paranoia Urbana is a digital and print metal/punk zine (d-beat, raw punk, crust, thrash), a Samamba Thrash initiative. We bring interviews, reviews, columns, and underground coverage.',
       'about.p2':
         "This zine doesn't belong only to whoever edits it, but to everyone who makes up the scene. Anyone can submit texts or suggest interviews and reviews. Our goal is to promote unity between punks and bangers — communities with different styles, united by the same cause — and to root out fascist elements from the scene. Paranoia Urbana follows a libertarian antifascist ideology.",
+      'hero.eyebrow': 'Urban Culture',
+      'hero.tagline': 'The street speaks. We record it.',
+      'hero.explore': 'Explore ↓',
+      'dossie.label': '002 — Dossier',
+      'dossie.heading': 'Street Stories',
+      'section.about.label': 'About',
+      'section.about.heading': 'The Street Is the Stage',
+      'about.readmore': 'Read more ↗',
+      'section.poem.label': 'Zine #01 — Poetry',
+      'section.poem.heading': 'Voice of the Streets',
     },
   };
 
@@ -47,6 +57,11 @@
       if (!el.dataset.i18nOriginal) el.dataset.i18nOriginal = el.innerHTML;
       var dict = HTML_STRINGS[lang];
       el.innerHTML = lang !== 'pt' && dict && dict[key] ? dict[key] : el.dataset.i18nOriginal;
+    });
+
+    document.querySelectorAll('[data-lang-content]').forEach(function (el) {
+      var elLang = el.getAttribute('data-lang-content');
+      el.style.display = elLang === lang ? '' : 'none';
     });
 
     document.querySelectorAll('[data-lang-btn]').forEach(function (btn) {

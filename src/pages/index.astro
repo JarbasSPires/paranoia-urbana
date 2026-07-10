@@ -24,13 +24,22 @@ const sections = [
   { items: documentaries, kicker: 'Documentário', path: 'documentarios' },
 ];
 
+const kickerEn: Record<string, string> = {
+  Entrevista: 'Interview',
+  Resenha: 'Review',
+  Documentário: 'Documentary',
+};
+
 const dossieItems = sections
   .flatMap(({ items, kicker, path }) =>
     items.map((item) => ({
       title: item.data.title,
+      titleEn: item.data.titleEn ?? item.data.title,
       summary: item.data.summary,
+      summaryEn: item.data.summaryEn ?? item.data.summary,
       date: item.data.date,
       kicker,
+      kickerEn: kickerEn[kicker] ?? kicker,
       href: `${base}${path}/${item.slug}/`,
       image: imageMap[item.slug] ? `${base}pulse/${imageMap[item.slug]}` : undefined,
     }))
@@ -42,31 +51,45 @@ const { Content: PoemContent } = await poemEntry!.render();
 ---
 <BaseLayout title="Home">
   <section class="hero-section" style={`background-image: linear-gradient(to bottom, rgba(10,10,10,0.55), rgba(10,10,10,0.92)), url('${base}pulse/hero.png')`}>
-    <p class="hero-eyebrow">Cultura Urbana</p>
+    <p class="hero-eyebrow" data-i18n="hero.eyebrow">Cultura Urbana</p>
     <h2 class="hero-heading">PARANOIA<br /><span class="accent">URBANA</span></h2>
-    <p class="hero-tagline">A rua fala. Nós registramos.</p>
-    <a href="#dossie" class="hero-explore">Explorar ↓</a>
+    <p class="hero-tagline" data-i18n="hero.tagline">A rua fala. Nós registramos.</p>
+    <a href="#dossie" class="hero-explore" data-i18n="hero.explore">Explorar ↓</a>
   </section>
 
   <div class="ticker">
-    <div class="ticker-track">
+    <div class="ticker-track" data-lang-content="pt">
       {dossieItems.map((item) => (
         <span>{item.kicker.toUpperCase()}: {item.title} &nbsp;///&nbsp; </span>
+      ))}
+    </div>
+    <div class="ticker-track" data-lang-content="en">
+      {dossieItems.map((item) => (
+        <span>{item.kickerEn.toUpperCase()}: {item.titleEn} &nbsp;///&nbsp; </span>
       ))}
     </div>
   </div>
 
   <section class="container" id="dossie">
-    <p class="section-label">002 — Dossiê</p>
-    <h2 class="section-heading">Histórias da Rua</h2>
+    <p class="section-label" data-i18n="dossie.label">002 — Dossiê</p>
+    <h2 class="section-heading" data-i18n="dossie.heading">Histórias da Rua</h2>
     <div class="dossie-grid">
       {dossieItems.map((item) => (
-        <a class="dossie-card" href={item.href}>
+        <a class={`dossie-card ${item.kicker === 'Entrevista' ? 'dossie-card-featured' : ''}`} href={item.href}>
           {item.image && <img src={item.image} alt={item.title} />}
-          <p class="kicker">{item.kicker}</p>
+          <p class="kicker">
+            <span data-lang-content="pt">{item.kicker}</span>
+            <span data-lang-content="en">{item.kickerEn}</span>
+          </p>
           <div class="dossie-card-body">
-            <h3>{item.title}</h3>
-            <p>{item.summary}</p>
+            <h3>
+              <span data-lang-content="pt">{item.title}</span>
+              <span data-lang-content="en">{item.titleEn}</span>
+            </h3>
+            <p>
+              <span data-lang-content="pt">{item.summary}</span>
+              <span data-lang-content="en">{item.summaryEn}</span>
+            </p>
           </div>
         </a>
       ))}
@@ -74,18 +97,18 @@ const { Content: PoemContent } = await poemEntry!.render();
   </section>
 
   <section class="container">
-    <p class="section-label">Sobre</p>
-    <h2 class="section-heading">A Rua É o Palco</h2>
-    <p class="about-teaser-text">
+    <p class="section-label" data-i18n="section.about.label">Sobre</p>
+    <h2 class="section-heading" data-i18n="section.about.heading">A Rua É o Palco</h2>
+    <p class="about-teaser-text" data-i18n="about.p1">
       Paranoia Urbana é um zine digital e impresso de metal e punk (d-beat, raw
       punk, crust, thrash), iniciativa da Samamba Thrash.
     </p>
-    <a href={`${base}quem-somos/`} class="hero-explore">Ler mais ↗</a>
+    <a href={`${base}quem-somos/`} class="hero-explore" data-i18n="about.readmore">Ler mais ↗</a>
   </section>
 
   <section class="container poem-section">
-    <p class="section-label">Zine #01 — Poesia</p>
-    <h2 class="section-heading">Voz das Ruas</h2>
+    <p class="section-label" data-i18n="section.poem.label">Zine #01 — Poesia</p>
+    <h2 class="section-heading" data-i18n="section.poem.heading">Voz das Ruas</h2>
     <div class="poem-body">
       <PoemContent />
     </div>

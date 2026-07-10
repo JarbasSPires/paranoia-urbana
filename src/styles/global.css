@@ -347,12 +347,24 @@ a:hover {
   border-color: var(--fg);
 }
 
+.dossie-card-featured {
+  grid-column: span 2;
+}
+
 .dossie-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
   filter: grayscale(60%) contrast(1.1);
+}
+
+.dossie-card-featured img {
+  height: 340px;
+}
+
+.dossie-card-featured .dossie-card-body h3 {
+  font-size: 26px;
 }
 
 .dossie-card .kicker {

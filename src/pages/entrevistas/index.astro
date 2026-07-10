@@ -13,8 +13,14 @@ const items = (await getCollection('interviews')).sort(
     {items.map((item) => (
       <li>
         <p class="kicker">{item.data.band ?? 'Entrevista'}</p>
-        <h3><a href={`${base}entrevistas/${item.slug}/`}>{item.data.title}</a></h3>
-        <p>{item.data.summary}</p>
+        <h3><a href={`${base}entrevistas/${item.slug}/`}>
+          <span data-lang-content="pt">{item.data.title}</span>
+          <span data-lang-content="en">{item.data.titleEn ?? item.data.title}</span>
+        </a></h3>
+        <p>
+          <span data-lang-content="pt">{item.data.summary}</span>
+          <span data-lang-content="en">{item.data.summaryEn ?? item.data.summary}</span>
+        </p>
       </li>
     ))}
   </ul>

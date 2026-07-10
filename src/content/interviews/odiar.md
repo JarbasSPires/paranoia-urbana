@@ -1,10 +1,14 @@
 ---
 title: "Entrevista — Odiär"
+titleEn: "Interview — Odiär"
 date: 2026-07-01
 summary: "D-beat raw punk direto do ES: a banda fala sobre origem, influências e a cena."
+summaryEn: "D-beat raw punk straight from Espírito Santo: the band talks origins, influences, and the scene."
 band: "Odiär"
 cover: "entrevista-odiar.png"
 ---
+
+<div data-lang-content="pt">
 
 **1. Como surgiu a ideia de vocês para montarem a banda? Conte um pouco da
 história da banda.**
@@ -51,3 +55,55 @@ mensagem para os nossos leitores?**
 Resposta Luís - Agradeço demais o convite pra participar do zine de vocês.
 Tamo junto sempre! Se mantenha punk, barulho não música, Palestina livre e
 é nóiz! Abraço e continuem na luta sempre!
+
+</div>
+
+<div data-lang-content="en">
+
+**1. How did the idea of forming the band come about? Tell us a bit about
+the band's history.**
+
+Answer from Luís - Well, brother, the idea at first was to do a reunion
+show with an old band of ours. But then we started creating our own
+sound and decided to put together a project called Disumano. The plan
+was to have at least 4 members, but it never got past the two of us...
+we always rehearsed as a duo... we even got to record some material as
+Disumano with a friend on vocals, and the guy who did the mastering
+decided to record a guitar track just to help out. But after that
+recording, we ended Disumano and started Odiär, already with the idea of
+it being just the two of us for real.
+
+**2. What are the band's main ideas and lyrical themes?**
+
+Answer from Luís - The lyrics are mostly about social issues, anti-
+bourgeoisie, anarchy, hopelessness, war, and all the other messed-up
+things plaguing this land.
+
+**3. How do you see the local and Brazilian scene today, in terms of the
+movement?**
+
+Answer from Luís - Here in ES there's a decent scene, though not super
+strong... there are some bands representing well, but punk here used to
+be bigger, at least the way I see it. The scene in Brazil is very strong
+and vast... there are a lot of bands making punk happen the best way,
+DIY, with some seriously badass protest music. Punk in Brazil is more
+alive every day, and that's very important and very necessary.
+
+**4. What are your main influences and what does the band like to
+listen to?**
+
+Answer from Luís - Discharge is the ultimate influence. Every riff we
+write is inspired by Discharge. We're really into d-beat, hardcore, from
+the classic bands to current ones... I'll name a few: Discharge in the
+Porrada era, Disclose, Physique, Destruct, Odiär, Ulster, Subúrbio 99,
+Detesto, Lifelock, Scarecrow, Anti Cimex, Vaaska, MG 15, Electric
+Funeral... damn, that's a lot of bands, ha!
+
+**5. Thanks for accepting the interview. Would you like to leave a
+message for our readers?**
+
+Answer from Luís - Thanks so much for the invite to be part of your
+zine. We're with you always! Stay punk, noise not music, free Palestine,
+and that's it! Big hug, keep fighting the good fight always!
+
+</div>

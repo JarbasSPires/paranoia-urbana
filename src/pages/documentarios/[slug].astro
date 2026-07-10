@@ -14,7 +14,10 @@ const base = import.meta.env.BASE_URL;
 ---
 <BaseLayout title={entry!.data.title}>
   <article class="article-body">
-    <h1>{entry!.data.title}</h1>
+    <h1>
+      <span data-lang-content="pt">{entry!.data.title}</span>
+      <span data-lang-content="en">{entry!.data.titleEn ?? entry!.data.title}</span>
+    </h1>
     <p class="article-meta">{entry!.data.date.toLocaleDateString('pt-BR', { timeZone: 'UTC' })}</p>
     {entry!.data.cover && (
       <img src={`${base}covers/${entry!.data.cover}`} alt={entry!.data.title} style="max-width:100%" />
