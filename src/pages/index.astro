@@ -14,37 +14,52 @@ const imageMap: Record<string, string> = {
   odiar: 'odiar.png',
   'flower-hardly-a-dream': 'flower.png',
   'violator-united-for-thrash': 'violator.png',
+  'violator-unholy-retribution': 'violator-unholy-retribution.jpg',
   'mulheres-no-metal': 'women-in-metal.png',
   'viver-para-lutar': 'viver-para-lutar.png',
 };
-
-const sections = [
-  { items: interviews, kicker: 'Entrevista', path: 'entrevistas' },
-  { items: reviews, kicker: 'Resenha', path: 'resenhas' },
-  { items: documentaries, kicker: 'Documentário', path: 'documentarios' },
-];
 
 const kickerEn: Record<string, string> = {
   Entrevista: 'Interview',
   Resenha: 'Review',
   Documentário: 'Documentary',
+  'Bandas para Conhecer': 'Bands to Discover',
 };
 
-const dossieItems = sections
-  .flatMap(({ items, kicker, path }) =>
-    items.map((item) => ({
-      title: item.data.title,
-      titleEn: item.data.titleEn ?? item.data.title,
-      summary: item.data.summary,
-      summaryEn: item.data.summaryEn ?? item.data.summary,
-      date: item.data.date,
-      kicker,
-      kickerEn: kickerEn[kicker] ?? kicker,
-      href: `${base}${path}/${item.slug}/`,
-      image: imageMap[item.slug] ? `${base}pulse/${imageMap[item.slug]}` : undefined,
-    }))
-  )
+function toCard(kicker: string, path: string) {
+  return (item: (typeof reviews)[number]) => ({
+    title: item.data.title,
+    titleEn: item.data.titleEn ?? item.data.title,
+    summary: item.data.summary,
+    summaryEn: item.data.summaryEn ?? item.data.summary,
+    date: item.data.date,
+    kicker,
+    kickerEn: kickerEn[kicker] ?? kicker,
+    href: `${base}${path}/${item.slug}/`,
+    image: imageMap[item.slug] ? `${base}pulse/${imageMap[item.slug]}` : undefined,
+  });
+}
+
+const bandSlugs = ['violator-united-for-thrash'];
+
+const interviewItems = interviews
+  .map(toCard('Entrevista', 'entrevistas'))
   .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const reviewItems = reviews
+  .filter((item) => !bandSlugs.includes(item.slug))
+  .map(toCard('Resenha', 'resenhas'))
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const bandItems = reviews
+  .filter((item) => bandSlugs.includes(item.slug))
+  .map(toCard('Bandas para Conhecer', 'resenhas'))
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+const documentaryItems = documentaries
+  .map(toCard('Documentário', 'documentarios'))
+  .sort((a, b) => b.date.valueOf() - a.date.valueOf());
+
+const tickerItems = [...interviewItems, ...reviewItems, ...bandItems, ...documentaryItems].sort(
+  (a, b) => b.date.valueOf() - a.date.valueOf()
+);
 
 const poemEntry = await getEntryBySlug('columns', 'queremos-viver');
 const { Content: PoemContent } = await poemEntry!.render();
@@ -59,12 +74,12 @@ const { Content: PoemContent } = await poemEntry!.render();
 
   <div class="ticker">
     <div class="ticker-track" data-lang-content="pt">
-      {dossieItems.map((item) => (
+      {tickerItems.map((item) => (
         <span>{item.kicker.toUpperCase()}: {item.title} &nbsp;///&nbsp; </span>
       ))}
     </div>
     <div class="ticker-track" data-lang-content="en">
-      {dossieItems.map((item) => (
+      {tickerItems.map((item) => (
         <span>{item.kickerEn.toUpperCase()}: {item.titleEn} &nbsp;///&nbsp; </span>
       ))}
     </div>
@@ -74,8 +89,81 @@ const { Content: PoemContent } = await poemEntry!.render();
     <p class="section-label" data-i18n="dossie.label">002 — Dossiê</p>
     <h2 class="section-heading" data-i18n="dossie.heading">Histórias da Rua</h2>
     <div class="dossie-grid">
-      {dossieItems.map((item) => (
-        <a class={`dossie-card ${item.kicker === 'Entrevista' ? 'dossie-card-featured' : ''}`} href={item.href}>
+      {interviewItems.map((item) => (
+        <a class="dossie-card dossie-card-featured" href={item.href}>
+          {item.image && <img src={item.image} alt={item.title} />}
+          <p class="kicker">
+            <span data-lang-content="pt">{item.kicker}</span>
+            <span data-lang-content="en">{item.kickerEn}</span>
+          </p>
+          <div class="dossie-card-body">
+            <h3>
+              <span data-lang-content="pt">{item.title}</span>
+              <span data-lang-content="en">{item.titleEn}</span>
+            </h3>
+            <p>
+              <span data-lang-content="pt">{item.summary}</span>
+              <span data-lang-content="en">{item.summaryEn}</span>
+            </p>
+          </div>
+        </a>
+      ))}
+
+      <div class="dossie-carousel" data-carousel>
+        {reviewItems.map((item, i) => (
+          <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
+            <a href={item.href}>
+              {item.image && <img src={item.image} alt={item.title} />}
+            </a>
+            <p class="kicker">
+              <span data-lang-content="pt">{item.kicker}</span>
+              <span data-lang-content="en">{item.kickerEn}</span>
+            </p>
+            <div class="dossie-carousel-body">
+              <h3><a href={item.href}>
+                <span data-lang-content="pt">{item.title}</span>
+                <span data-lang-content="en">{item.titleEn}</span>
+              </a></h3>
+              <p>
+                <span data-lang-content="pt">{item.summary}</span>
+                <span data-lang-content="en">{item.summaryEn}</span>
+              </p>
+            </div>
+          </div>
+        ))}
+        <div class="dossie-carousel-nav">
+          <button type="button" class="dossie-carousel-arrow" data-carousel-prev aria-label="Anterior">‹</button>
+          <div class="dossie-carousel-dots">
+            {reviewItems.map((_, i) => (
+              <button type="button" class={`dossie-carousel-dot ${i === 0 ? 'active' : ''}`} data-carousel-dot={i} aria-label={`Página ${i + 1}`}></button>
+            ))}
+          </div>
+          <button type="button" class="dossie-carousel-arrow" data-carousel-next aria-label="Próxima">›</button>
+        </div>
+      </div>
+
+      {bandItems.map((item) => (
+        <a class="dossie-card" href={item.href}>
+          {item.image && <img src={item.image} alt={item.title} />}
+          <p class="kicker">
+            <span data-lang-content="pt">{item.kicker}</span>
+            <span data-lang-content="en">{item.kickerEn}</span>
+          </p>
+          <div class="dossie-card-body">
+            <h3>
+              <span data-lang-content="pt">{item.title}</span>
+              <span data-lang-content="en">{item.titleEn}</span>
+            </h3>
+            <p>
+              <span data-lang-content="pt">{item.summary}</span>
+              <span data-lang-content="en">{item.summaryEn}</span>
+            </p>
+          </div>
+        </a>
+      ))}
+
+      {documentaryItems.map((item) => (
+        <a class="dossie-card" href={item.href}>
           {item.image && <img src={item.image} alt={item.title} />}
           <p class="kicker">
             <span data-lang-content="pt">{item.kicker}</span>
@@ -113,4 +201,22 @@ const { Content: PoemContent } = await poemEntry!.render();
       <PoemContent />
     </div>
   </section>
+
+  <script>
+    document.querySelectorAll('[data-carousel]').forEach((root) => {
+      const slides = Array.from(root.querySelectorAll('.dossie-carousel-slide'));
+      const dots = Array.from(root.querySelectorAll('[data-carousel-dot]'));
+      let current = 0;
+
+      function show(index: number) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+      }
+
+      root.querySelector('[data-carousel-prev]')?.addEventListener('click', () => show(current - 1));
+      root.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(current + 1));
+      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+    });
+  </script>
 </BaseLayout>
