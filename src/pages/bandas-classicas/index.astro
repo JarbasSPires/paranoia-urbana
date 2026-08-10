@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const items = (await getCollection('classicBands')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+<BaseLayout title="Bandas Clássicas">
+  <h2 data-i18n="classicbands.heading">Bandas Clássicas</h2>
+  <ul class="article-list">
+    {items.map((item) => (
+      <li>
+        <p class="kicker">
+          <span data-lang-content="pt">Bandas Clássicas</span>
+          <span data-lang-content="en">Classic Bands</span>
+        </p>
+        <h3><a href={`${base}bandas-classicas/${item.slug}/`}>
+          <span data-lang-content="pt">{item.data.title}</span>
+          <span data-lang-content="en">{item.data.titleEn ?? item.data.title}</span>
+        </a></h3>
+        <p>
+          <span data-lang-content="pt">{item.data.summary}</span>
+          <span data-lang-content="en">{item.data.summaryEn ?? item.data.summary}</span>
+        </p>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

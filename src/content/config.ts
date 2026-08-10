@@ -23,6 +23,7 @@ const reviews = defineCollection({ type: 'content', schema: articleSchema });
 const interviews = defineCollection({ type: 'content', schema: articleSchema });
 const columns = defineCollection({ type: 'content', schema: articleSchema });
 const documentaries = defineCollection({ type: 'content', schema: articleSchema });
+const classicBands = defineCollection({ type: 'content', schema: articleSchema });
 const shows = defineCollection({ type: 'content', schema: showSchema });
 
-export const collections = { reviews, interviews, columns, documentaries, shows };
+export const collections = { reviews, interviews, columns, documentaries, classicBands, shows };
