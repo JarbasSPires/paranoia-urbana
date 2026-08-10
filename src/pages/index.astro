@@ -90,25 +90,29 @@ const { Content: PoemContent } = await poemEntry!.render();
     <p class="section-label" data-i18n="dossie.label">002 — Dossiê</p>
     <h2 class="section-heading" data-i18n="dossie.heading">Histórias da Rua</h2>
     <div class="dossie-grid">
-      {interviewItems.map((item) => (
-        <a class="dossie-card dossie-card-featured" href={item.href}>
-          {item.image && <img src={item.image} alt={item.title} />}
+      {interviewItems.length > 0 && (
+        <div class="dossie-card dossie-card-featured dossie-card-interviews">
+          {interviewItems[0].image && <img src={interviewItems[0].image} alt={interviewItems[0].title} />}
           <p class="kicker">
-            <span data-lang-content="pt">{item.kicker}</span>
-            <span data-lang-content="en">{item.kickerEn}</span>
+            <span data-lang-content="pt">Entrevistas</span>
+            <span data-lang-content="en">Interviews</span>
           </p>
           <div class="dossie-card-body">
-            <h3>
-              <span data-lang-content="pt">{item.title}</span>
-              <span data-lang-content="en">{item.titleEn}</span>
-            </h3>
-            <p>
-              <span data-lang-content="pt">{item.summary}</span>
-              <span data-lang-content="en">{item.summaryEn}</span>
-            </p>
+            {interviewItems.map((item) => (
+              <a class="dossie-interview-link" href={item.href}>
+                <h3>
+                  <span data-lang-content="pt">{item.title}</span>
+                  <span data-lang-content="en">{item.titleEn}</span>
+                </h3>
+                <p>
+                  <span data-lang-content="pt">{item.summary}</span>
+                  <span data-lang-content="en">{item.summaryEn}</span>
+                </p>
+              </a>
+            ))}
           </div>
-        </a>
-      ))}
+        </div>
+      )}
 
       <div class="dossie-carousel" data-carousel>
         {reviewItems.map((item, i) => (
