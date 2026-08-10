@@ -491,35 +491,16 @@ a:hover {
   color: var(--muted);
 }
 
-.dossie-card-interviews .dossie-card-body {
-  padding: 0;
+.dossie-carousel-featured {
+  grid-column: span 2;
 }
 
-.dossie-interview-link {
-  display: block;
-  padding: 14px;
-  color: var(--fg);
-  border-top: 1px solid var(--rule);
+.dossie-carousel-featured .dossie-carousel-slide img {
+  height: 340px;
 }
 
-.dossie-interview-link:first-child {
-  border-top: none;
-}
-
-.dossie-interview-link:hover {
-  background: var(--rule);
-}
-
-.dossie-interview-link h3 {
-  font-family: var(--font-headline);
-  font-size: 19px;
-  margin: 0 0 6px;
-}
-
-.dossie-interview-link p {
-  font-size: 13px;
-  margin: 0;
-  color: var(--muted);
+.dossie-carousel-featured .dossie-carousel-body h3 {
+  font-size: 26px;
 }
 
 .about-teaser-text {
