@@ -21,7 +21,7 @@
       'about.heading': 'About Us',
       'about.contact.label': 'Contact:',
       'about.p1':
-        'Paranoia Urbana is a digital and print metal/punk zine (d-beat, raw punk, crust, thrash), a Samamba Thrash initiative. We bring interviews, reviews, columns, and underground coverage.',
+        'Paranoia Urbana is a digital and print metal/punk zine, a Samamba Thrash initiative. We bring interviews, reviews, columns, and underground coverage.',
       'about.p2':
         "This zine doesn't belong only to whoever edits it, but to everyone who makes up the scene. Anyone can submit texts or suggest interviews and reviews. Our goal is to promote unity between punks and bangers — communities with different styles, united by the same cause — and to root out fascist elements from the scene. Paranoia Urbana follows a libertarian antifascist ideology.",
       'hero.eyebrow': 'Urban Culture',
