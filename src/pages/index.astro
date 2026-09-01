@@ -22,6 +22,7 @@ const imageMap: Record<string, string> = {
   contravene: 'contravene.png',
   'habak-mil-orquideas-en-medio-del-desierto': 'habak.jpg',
   'bolt-thrower': 'bolt-thrower.png',
+  lamento: 'lamento.png',
 };
 
 const kickerEn: Record<string, string> = {
@@ -46,7 +47,7 @@ function toCard(kicker: string, path: string) {
   });
 }
 
-const bandSlugs = ['violator-united-for-thrash'];
+const bandSlugs = ['violator-united-for-thrash', 'lamento'];
 
 const interviewItems = interviews
   .map(toCard('Entrevista', 'entrevistas'))
@@ -168,25 +169,38 @@ const { Content: PoemContent } = await poemEntry!.render();
         </div>
       </div>
 
-      {bandItems.map((item) => (
-        <a class="dossie-card" href={item.href}>
-          {item.image && <img src={item.image} alt={item.title} />}
-          <p class="kicker">
-            <span data-lang-content="pt">{item.kicker}</span>
-            <span data-lang-content="en">{item.kickerEn}</span>
-          </p>
-          <div class="dossie-card-body">
-            <h3>
-              <span data-lang-content="pt">{item.title}</span>
-              <span data-lang-content="en">{item.titleEn}</span>
-            </h3>
-            <p>
-              <span data-lang-content="pt">{item.summary}</span>
-              <span data-lang-content="en">{item.summaryEn}</span>
+      <div class="dossie-carousel" data-carousel>
+        {bandItems.map((item, i) => (
+          <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
+            <a href={item.href}>
+              {item.image && <img src={item.image} alt={item.title} />}
+            </a>
+            <p class="kicker">
+              <span data-lang-content="pt">{item.kicker}</span>
+              <span data-lang-content="en">{item.kickerEn}</span>
             </p>
+            <div class="dossie-carousel-body">
+              <h3><a href={item.href}>
+                <span data-lang-content="pt">{item.title}</span>
+                <span data-lang-content="en">{item.titleEn}</span>
+              </a></h3>
+              <p>
+                <span data-lang-content="pt">{item.summary}</span>
+                <span data-lang-content="en">{item.summaryEn}</span>
+              </p>
+            </div>
           </div>
-        </a>
-      ))}
+        ))}
+        <div class="dossie-carousel-nav">
+          <button type="button" class="dossie-carousel-arrow" data-carousel-prev aria-label="Anterior">‹</button>
+          <div class="dossie-carousel-dots">
+            {bandItems.map((_, i) => (
+              <button type="button" class={`dossie-carousel-dot ${i === 0 ? 'active' : ''}`} data-carousel-dot={i} aria-label={`Página ${i + 1}`}></button>
+            ))}
+          </div>
+          <button type="button" class="dossie-carousel-arrow" data-carousel-next aria-label="Próxima">›</button>
+        </div>
+      </div>
 
       <div class="dossie-carousel" data-carousel>
         {documentaryItems.map((item, i) => (
