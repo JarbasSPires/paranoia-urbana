@@ -21,7 +21,7 @@ parte da sujeira, da urgência e da repetição hipnótica do punk extremo
 para transformar indignação política e experiências cotidianas em
 matéria sonora.
 
-<img src="/paranoia-urbana/covers/banda-lamento-trio.png" alt="Lamento" style="max-width:100%" />
+<img src="/covers/banda-lamento-trio.png" alt="Lamento" style="max-width:100%" />
 
 O Lamento se destaca por compreender que o crust punk pode ser, ao mesmo
 tempo, um instrumento de denúncia pública e um abrigo para experiências
@@ -54,7 +54,7 @@ reveals a proposal with no neutrality: the music starts from filth,
 urgency, and the hypnotic repetition of extreme punk to turn political
 indignation and everyday experience into sonic matter.
 
-<img src="/paranoia-urbana/covers/banda-lamento-trio.png" alt="Lamento" style="max-width:100%" />
+<img src="/covers/banda-lamento-trio.png" alt="Lamento" style="max-width:100%" />
 
 Lamento stands out for understanding that crust punk can be, at once, an
 instrument of public denunciation and a shelter for intimate experience.

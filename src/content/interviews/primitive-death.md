@@ -10,7 +10,7 @@ cover: "entrevista-primitive-death.jpg"
 
 <div data-lang-content="pt">
 
-<img src="/paranoia-urbana/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
+<img src="/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
 
 **1. Quais foram as principais influências musicais e ideológicas que
 levaram vocês a formar a banda?**
@@ -147,7 +147,7 @@ desgraça!
 
 <div data-lang-content="en">
 
-<img src="/paranoia-urbana/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
+<img src="/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
 
 **1. What were the main musical and ideological influences that led you
 to form the band?**

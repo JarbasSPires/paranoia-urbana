@@ -1,6 +1,5 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://jarbasspires.github.io',
-  base: '/paranoia-urbana/',
+  site: 'https://paranoiaurbana.com.br',
 });
