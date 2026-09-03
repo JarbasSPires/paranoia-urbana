@@ -289,10 +289,13 @@ const { Content: PoemContent } = await poemEntry!.render();
   </section>
 
   <script>
+    const AUTO_ADVANCE_MS = 12000;
+
     document.querySelectorAll('[data-carousel]').forEach((root) => {
       const slides = Array.from(root.querySelectorAll('.dossie-carousel-slide'));
       const dots = Array.from(root.querySelectorAll('[data-carousel-dot]'));
       let current = 0;
+      let timer: ReturnType<typeof setInterval> | undefined;
 
       function show(index: number) {
         current = (index + slides.length) % slides.length;
@@ -300,9 +303,33 @@ const { Content: PoemContent } = await poemEntry!.render();
         dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
       }
 
-      root.querySelector('[data-carousel-prev]')?.addEventListener('click', () => show(current - 1));
-      root.querySelector('[data-carousel-next]')?.addEventListener('click', () => show(current + 1));
-      dots.forEach((dot, i) => dot.addEventListener('click', () => show(i)));
+      function startAutoAdvance() {
+        if (slides.length <= 1) return;
+        timer = setInterval(() => show(current + 1), AUTO_ADVANCE_MS);
+      }
+
+      function restartAutoAdvance() {
+        if (timer) clearInterval(timer);
+        startAutoAdvance();
+      }
+
+      root.querySelector('[data-carousel-prev]')?.addEventListener('click', () => {
+        show(current - 1);
+        restartAutoAdvance();
+      });
+      root.querySelector('[data-carousel-next]')?.addEventListener('click', () => {
+        show(current + 1);
+        restartAutoAdvance();
+      });
+      dots.forEach((dot, i) => dot.addEventListener('click', () => {
+        show(i);
+        restartAutoAdvance();
+      }));
+
+      root.addEventListener('mouseenter', () => timer && clearInterval(timer));
+      root.addEventListener('mouseleave', startAutoAdvance);
+
+      startAutoAdvance();
     });
   </script>
 </BaseLayout>
