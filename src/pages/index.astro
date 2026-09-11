@@ -25,6 +25,7 @@ const imageMap: Record<string, string> = {
   lamento: 'lamento.png',
   'rothadas-toviskert': 'rothadas.jpg',
   'tampa-de-fossa': 'tampa-de-fossa.jpg',
+  'under-the-ruins': 'under-the-ruins.jpg',
 };
 
 const kickerEn: Record<string, string> = {
@@ -49,7 +50,7 @@ function toCard(kicker: string, path: string) {
   });
 }
 
-const bandSlugs = ['violator-united-for-thrash', 'lamento'];
+const bandSlugs = ['violator-united-for-thrash', 'lamento', 'under-the-ruins'];
 
 const interviewItems = interviews
   .map(toCard('Entrevista', 'entrevistas'))
