@@ -26,6 +26,7 @@ const imageMap: Record<string, string> = {
   'rothadas-toviskert': 'rothadas.jpg',
   'tampa-de-fossa': 'tampa-de-fossa.jpg',
   'under-the-ruins': 'under-the-ruins.jpg',
+  hedonist: 'hedonist.webp',
 };
 
 const kickerEn: Record<string, string> = {
@@ -50,7 +51,7 @@ function toCard(kicker: string, path: string) {
   });
 }
 
-const bandSlugs = ['violator-united-for-thrash', 'lamento', 'under-the-ruins', 'tampa-de-fossa'];
+const bandSlugs = ['violator-united-for-thrash', 'lamento', 'under-the-ruins', 'tampa-de-fossa', 'hedonist'];
 
 const interviewItems = interviews
   .map(toCard('Entrevista', 'entrevistas'))
