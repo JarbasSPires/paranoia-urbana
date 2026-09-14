@@ -14,7 +14,10 @@ const links = [
 <header class="site-header">
   <a href={base}><img class="logo" src={`${base}logo.png`} alt="Paranoia Urbana" /></a>
   <h1 class="site-title"><a href={base}>PARANOIA URBANA</a></h1>
-  <nav class="site-nav">
+  <button type="button" class="nav-toggle" data-nav-toggle aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" data-site-nav>
     {links.map((link) => <a href={link.href} data-i18n={link.key}>{link.label}</a>)}
     <span class="lang-switch">
       <button type="button" data-lang-btn="pt">PT-BR</button>
@@ -22,3 +25,20 @@ const links = [
     </span>
   </nav>
 </header>
+
+<script>
+  const navToggle = document.querySelector('[data-nav-toggle]');
+  const siteNav = document.querySelector('[data-site-nav]');
+
+  navToggle?.addEventListener('click', () => {
+    const isOpen = siteNav?.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', String(!!isOpen));
+  });
+
+  siteNav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      siteNav.classList.remove('open');
+      navToggle?.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
