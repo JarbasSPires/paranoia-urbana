@@ -5,7 +5,7 @@ date: 1984-01-01
 summary: "Uma das vozes mais longevas do punk pesado brasileiro: hardcore, punk, thrash e death metal com ética DIY desde 1984."
 summaryEn: "One of the longest-running voices of Brazilian heavy punk: hardcore, punk, thrash, and death metal with a DIY ethic since 1984."
 band: "Armagedom"
-cover: "classica-armagedom.png"
+cover: "classica-armagedom.webp"
 ---
 
 <div data-lang-content="pt">

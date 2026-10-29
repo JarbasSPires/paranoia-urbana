@@ -5,7 +5,7 @@ date: 2026-09-14
 summary: "Crust/noise hardcore de Fukuoka (Japão) desde 2008 — peso, ruído e colapso iminente, com um lançamento beneficente para casas de show."
 summaryEn: "Crust/noise hardcore from Fukuoka, Japan, since 2008 — weight, noise, and impending collapse, from a charity release supporting local venues."
 band: "End of Pollution"
-cover: "banda-end-of-pollution.png"
+cover: "banda-end-of-pollution.webp"
 ---
 
 <div data-lang-content="pt">

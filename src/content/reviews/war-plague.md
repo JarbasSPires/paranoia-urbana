@@ -5,7 +5,7 @@ date: 2026-10-08
 summary: "Crust punk de Minneapolis com mais de duas décadas de estrada, ética DIY e influências de thrash, metal punk e stenchcore."
 summaryEn: "Minneapolis crust punk with over two decades on the road, a DIY ethic, and thrash, metal punk, and stenchcore influences."
 band: "War//Plague"
-cover: "banda-war-plague.png"
+cover: "banda-war-plague.webp"
 ---
 
 <div data-lang-content="pt">

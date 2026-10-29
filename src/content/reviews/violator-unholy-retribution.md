@@ -5,7 +5,7 @@ date: 2026-07-22
 summary: "O novo álbum traz a pegada thrash/death dos anos 80 brasileiro, com riffs matadores e tributo às raízes do metal nacional."
 summaryEn: "The new album brings that 80s Brazilian thrash/death vibe, with killer riffs and a tribute to the roots of Brazilian metal."
 band: "Violator"
-cover: "violator-unholy-retribution.jpg"
+cover: "violator-unholy-retribution.webp"
 ---
 
 <div data-lang-content="pt">

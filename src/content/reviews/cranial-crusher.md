@@ -5,7 +5,7 @@ date: 2026-10-02
 summary: "Thrash metal/crossover de São Bernardo do Campo, com riffs velozes, vocais contundentes e crítica social e política."
 summaryEn: "Thrash metal/crossover from São Bernardo do Campo, with fast riffs, forceful vocals, and social and political critique."
 band: "Cranial Crusher"
-cover: "banda-cranial-crusher.png"
+cover: "banda-cranial-crusher.webp"
 ---
 
 <div data-lang-content="pt">

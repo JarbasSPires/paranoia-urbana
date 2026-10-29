@@ -5,7 +5,7 @@ date: 2012-01-01
 summary: "Anarcopunk clássico de Samambaia (DF): amizade, protesto e resistência à violência policial desde 2012."
 summaryEn: "Classic anarcho-punk from Samambaia (DF): friendship, protest, and resistance to police violence since 2012."
 band: "Tampa de Fossa"
-cover: "classica-tampa-de-fossa.jpg"
+cover: "classica-tampa-de-fossa.webp"
 ---
 
 <div data-lang-content="pt">
@@ -17,7 +17,7 @@ talvez o fim dela. A banda surgiu como uma expressão genuína dos
 sentimentos e experiências vividos nos rolês suburbanos que fazíamos por
 volta de 2012.
 
-<img src="/covers/tampa-de-fossa-banda.png" alt="Tampa de Fossa" style="max-width:100%" />
+<img src="/covers/tampa-de-fossa-banda.webp" alt="Tampa de Fossa" style="max-width:100%" />
 
 Naquele período, a cena underground de Brasília estava efervescente, com
 inúmeras bandas de crust punk, thrash metal, death metal e anarcopunk.
@@ -54,7 +54,7 @@ youth — or maybe the end of it. The band emerged as a genuine expression
 of the feelings and experiences lived through the suburban hangouts we
 used to have around 2012.
 
-<img src="/covers/tampa-de-fossa-banda.png" alt="Tampa de Fossa" style="max-width:100%" />
+<img src="/covers/tampa-de-fossa-banda.webp" alt="Tampa de Fossa" style="max-width:100%" />
 
 Back then, Brasília's underground scene was thriving, with countless
 crust punk, thrash metal, death metal, and anarcho-punk bands. And,

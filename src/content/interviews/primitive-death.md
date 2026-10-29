@@ -5,12 +5,12 @@ date: 2026-08-10
 summary: "Crust/d-beat de Brasília fala sobre influências, ética DIY, Palestina e o futuro da cena."
 summaryEn: "Crust/d-beat from Brasília talks influences, DIY ethics, Palestine, and the future of the scene."
 band: "Primitive Death"
-cover: "entrevista-primitive-death.jpg"
+cover: "entrevista-primitive-death.webp"
 ---
 
 <div data-lang-content="pt">
 
-<img src="/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
+<img src="/covers/entrevista-primitive-death-logo.webp" alt="Primitive Death" style="max-width:100%" />
 
 **1. Quais foram as principais influências musicais e ideológicas que
 levaram vocês a formar a banda?**
@@ -147,7 +147,7 @@ desgraça!
 
 <div data-lang-content="en">
 
-<img src="/covers/entrevista-primitive-death-logo.jpg" alt="Primitive Death" style="max-width:100%" />
+<img src="/covers/entrevista-primitive-death-logo.webp" alt="Primitive Death" style="max-width:100%" />
 
 **1. What were the main musical and ideological influences that led you
 to form the band?**

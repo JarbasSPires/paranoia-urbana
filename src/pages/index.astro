@@ -12,32 +12,32 @@ const [reviews, interviews, documentaries, classicBands] = await Promise.all([
 ]);
 
 const imageMap: Record<string, string> = {
-  odiar: 'odiar.png',
-  'primitive-death': 'primitive-death.jpg',
-  'flower-hardly-a-dream': 'flower.png',
-  'violator-united-for-thrash': 'violator.png',
-  'violator-unholy-retribution': 'violator-unholy-retribution.jpg',
-  'mulheres-no-metal': 'women-in-metal.png',
-  'viver-para-lutar': 'viver-para-lutar.png',
-  contravene: 'contravene.png',
-  'habak-mil-orquideas-en-medio-del-desierto': 'habak.jpg',
-  'bolt-thrower': 'bolt-thrower.png',
-  lamento: 'lamento.png',
-  'rothadas-toviskert': 'rothadas.jpg',
-  'tampa-de-fossa': 'tampa-de-fossa.jpg',
-  'under-the-ruins': 'under-the-ruins.jpg',
+  odiar: 'odiar.webp',
+  'primitive-death': 'primitive-death.webp',
+  'flower-hardly-a-dream': 'flower.webp',
+  'violator-united-for-thrash': 'violator.webp',
+  'violator-unholy-retribution': 'violator-unholy-retribution.webp',
+  'mulheres-no-metal': 'women-in-metal.webp',
+  'viver-para-lutar': 'viver-para-lutar.webp',
+  contravene: 'contravene.webp',
+  'habak-mil-orquideas-en-medio-del-desierto': 'habak.webp',
+  'bolt-thrower': 'bolt-thrower.webp',
+  lamento: 'lamento.webp',
+  'rothadas-toviskert': 'rothadas.webp',
+  'tampa-de-fossa': 'tampa-de-fossa.webp',
+  'under-the-ruins': 'under-the-ruins.webp',
   hedonist: 'hedonist.webp',
-  'deviare-age-of-madness': 'deviare.jpg',
-  'death-lotus-zeitgeist-karma': 'death-lotus.jpg',
-  'end-of-pollution': 'end-of-pollution.png',
-  kreator: 'kreator.png',
-  'forca-macabra': 'forca-macabra.png',
-  'cranial-crusher': 'cranial-crusher.png',
-  'war-plague': 'war-plague.png',
-  agua: 'agua.png',
-  'witch-hunt': 'witch-hunt.png',
-  armagedom: 'armagedom.png',
-  'after-the-bombs': 'after-the-bombs.png',
+  'deviare-age-of-madness': 'deviare.webp',
+  'death-lotus-zeitgeist-karma': 'death-lotus.webp',
+  'end-of-pollution': 'end-of-pollution.webp',
+  kreator: 'kreator.webp',
+  'forca-macabra': 'forca-macabra.webp',
+  'cranial-crusher': 'cranial-crusher.webp',
+  'war-plague': 'war-plague.webp',
+  agua: 'agua.webp',
+  'witch-hunt': 'witch-hunt.webp',
+  armagedom: 'armagedom.webp',
+  'after-the-bombs': 'after-the-bombs.webp',
 };
 
 const kickerEn: Record<string, string> = {
@@ -105,7 +105,7 @@ const poemEntry = await getEntryBySlug('columns', 'queremos-viver');
 const { Content: PoemContent } = await poemEntry!.render();
 ---
 <BaseLayout title="Home">
-  <section class="hero-section" style={`background-image: linear-gradient(to bottom, rgba(10,10,10,0.55), rgba(10,10,10,0.92)), url('${base}pulse/hero.png')`}>
+  <section class="hero-section" style={`background-image: linear-gradient(to bottom, rgba(10,10,10,0.55), rgba(10,10,10,0.92)), url('${base}pulse/hero.webp')`}>
     <p class="hero-eyebrow" data-i18n="hero.eyebrow">Cultura Urbana</p>
     <h2 class="hero-heading">PARANOIA<br /><span class="accent">URBANA</span></h2>
     <p class="hero-tagline" data-i18n="hero.tagline">A rua fala. Nós registramos.</p>
@@ -133,7 +133,7 @@ const { Content: PoemContent } = await poemEntry!.render();
         {interviewItems.map((item, i) => (
           <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
             <a href={item.href}>
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" />}
             </a>
             <p class="kicker">
               <span data-lang-content="pt">{item.kicker}</span>
@@ -166,7 +166,7 @@ const { Content: PoemContent } = await poemEntry!.render();
         {reviewItems.map((item, i) => (
           <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
             <a href={item.href}>
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" />}
             </a>
             <p class="kicker">
               <span data-lang-content="pt">{item.kicker}</span>
@@ -199,7 +199,7 @@ const { Content: PoemContent } = await poemEntry!.render();
         {bandItems.map((item, i) => (
           <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
             <a href={item.href}>
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" />}
             </a>
             <p class="kicker">
               <span data-lang-content="pt">{item.kicker}</span>
@@ -232,7 +232,7 @@ const { Content: PoemContent } = await poemEntry!.render();
         {documentaryItems.map((item, i) => (
           <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
             <a href={item.href}>
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" />}
             </a>
             <p class="kicker">
               <span data-lang-content="pt">{item.kicker}</span>
@@ -265,7 +265,7 @@ const { Content: PoemContent } = await poemEntry!.render();
         {classicBandItems.map((item, i) => (
           <div class={`dossie-carousel-slide ${i === 0 ? 'active' : ''}`}>
             <a href={item.href}>
-              {item.image && <img src={item.image} alt={item.title} />}
+              {item.image && <img src={item.image} alt={item.title} loading="lazy" decoding="async" />}
             </a>
             <p class="kicker">
               <span data-lang-content="pt">{item.kicker}</span>

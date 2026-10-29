@@ -5,7 +5,7 @@ date: 2001-01-01
 summary: "Anarcho-punk e crust da Filadélfia desde 2001, com vocais alternados e política direta sem abrir mão da composição."
 summaryEn: "Philadelphia anarcho-punk and crust since 2001, with traded vocals and direct politics without sacrificing songwriting."
 band: "Witch Hunt"
-cover: "classica-witch-hunt.png"
+cover: "classica-witch-hunt.webp"
 ---
 
 <div data-lang-content="pt">

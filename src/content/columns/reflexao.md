@@ -4,7 +4,7 @@ titleEn: "Reflection"
 date: 2026-07-01
 summary: "O editorial da Edição #1: pós-revival do underground, união entre punks e bangers, e o compromisso antifascista do zine."
 summaryEn: "Edition #1's editorial: the underground's post-revival, unity between punks and bangers, and the zine's antifascist commitment."
-cover: "coluna-reflexao.png"
+cover: "coluna-reflexao.webp"
 ---
 
 <div data-lang-content="pt">

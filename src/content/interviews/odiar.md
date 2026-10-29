@@ -5,7 +5,7 @@ date: 2026-07-01
 summary: "D-beat raw punk direto do ES: a banda fala sobre origem, influências e a cena."
 summaryEn: "D-beat raw punk straight from Espírito Santo: the band talks origins, influences, and the scene."
 band: "Odiär"
-cover: "entrevista-odiar.png"
+cover: "entrevista-odiar.webp"
 ---
 
 <div data-lang-content="pt">

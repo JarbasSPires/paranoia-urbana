@@ -5,7 +5,7 @@ date: 2025-01-01
 summary: "Neo-crust intenso e emocional que equilibra fúria e melodia, dialogando com Ekkaia, From Ashes Rise e Schifosi."
 summaryEn: "Intense, emotional neo-crust balancing fury and melody, in conversation with Ekkaia, From Ashes Rise, and Schifosi."
 band: "Habak"
-cover: "resenha-habak-mil-orquideas.jpg"
+cover: "resenha-habak-mil-orquideas.webp"
 ---
 
 <div data-lang-content="pt">

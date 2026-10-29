@@ -18,7 +18,7 @@ bateria, a banda combina o peso cadenciado do death metal de guerra com
 a sujeira do crust punk, a urgência do grindcore do fim dos anos 1980 e
 a violência rítmica do death metal sueco.
 
-<img src="/covers/hedonist-live.jpg" alt="HEDONIST" style="max-width:100%" />
+<img src="/covers/hedonist-live.webp" alt="HEDONIST" style="max-width:100%" />
 
 A origem da HEDONIST está na parceria entre Athena e JP, que decidiram
 iniciar uma banda baseada no ponto de encontro entre suas diferentes
@@ -74,7 +74,7 @@ combines the cadenced weight of war death metal with the filth of
 crust punk, the urgency of late-1980s grindcore, and the rhythmic
 violence of Swedish death metal.
 
-<img src="/covers/hedonist-live.jpg" alt="HEDONIST" style="max-width:100%" />
+<img src="/covers/hedonist-live.webp" alt="HEDONIST" style="max-width:100%" />
 
 HEDONIST's origin lies in the partnership between Athena and JP, who
 decided to start a band based on the meeting point between their

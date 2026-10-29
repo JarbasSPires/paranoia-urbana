@@ -5,7 +5,7 @@ date: 2025-01-01
 summary: "Death/doom húngaro que equilibra brutalidade e atmosfera sepulcral, ecoando a escola finlandesa dos anos 90."
 summaryEn: "Hungarian death/doom balancing brutality and sepulchral atmosphere, echoing the '90s Finnish school."
 band: "Rothadás"
-cover: "resenha-rothadas-toviskert.jpg"
+cover: "resenha-rothadas-toviskert.webp"
 ---
 
 <div data-lang-content="pt">

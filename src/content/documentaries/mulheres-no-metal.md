@@ -4,7 +4,7 @@ titleEn: "Women in Metal (Mulheres no Metal)"
 date: 2026-07-01
 summary: "Documentário de 2013 sobre a força feminina no metal brasileiro, com bandas de Belo Horizonte."
 summaryEn: "A 2013 documentary on the strength of women in Brazilian metal, featuring bands from Belo Horizonte."
-cover: "documentarios.png"
+cover: "documentarios.webp"
 links:
   - label: "Assistir no YouTube"
     url: "https://www.youtube.com/watch?v=jj2EI8keIBs&t=545s"

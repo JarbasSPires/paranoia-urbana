@@ -5,7 +5,7 @@ date: 2026-10-02
 summary: "Crust punk de denúncia direta, urgente e incômoda sobre guerra, violência de Estado e resistência."
 summaryEn: "Direct, urgent, and unsettling protest crust punk about war, state violence, and resistance."
 band: "Death Lótus"
-cover: "resenha-death-lotus-zeitgeist-karma.jpg"
+cover: "resenha-death-lotus-zeitgeist-karma.webp"
 ---
 
 <div data-lang-content="pt">

@@ -5,7 +5,7 @@ date: 1982-01-01
 summary: "Do horror e da violência do thrash alemão dos anos 80 à crítica social contra a guerra, o ódio e a manipulação política."
 summaryEn: "From the horror and violence of 1980s German thrash to social critique against war, hate, and political manipulation."
 band: "Kreator"
-cover: "classica-kreator.png"
+cover: "classica-kreator.webp"
 ---
 
 <div data-lang-content="pt">

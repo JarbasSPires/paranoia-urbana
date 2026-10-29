@@ -5,7 +5,7 @@ date: 2026-10-14
 summary: "Duo punk anarquista de Peruíbe (SP), rápido, cru e combativo, movido pela ética DIY e pela construção coletiva."
 summaryEn: "Anarcho-punk duo from Peruíbe, São Paulo: fast, raw, and combative, driven by DIY ethics and collective building."
 band: "Água"
-cover: "banda-agua.png"
+cover: "banda-agua.webp"
 ---
 
 <div data-lang-content="pt">

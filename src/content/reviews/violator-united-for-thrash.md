@@ -5,7 +5,7 @@ date: 2026-07-01
 summary: "Thrash metal, resistência e espírito underground desde 2002: a trajetória DIY da banda de Brasília."
 summaryEn: "Thrash metal, resistance, and underground spirit since 2002: the DIY story of the Brasília band."
 band: "Violator"
-cover: "resenha-violator.png"
+cover: "resenha-violator.webp"
 links:
   - label: "Bandcamp"
     url: "https://violatorthrash.bandcamp.com/album/scenarios-of-brutality"

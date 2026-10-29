@@ -5,7 +5,7 @@ date: 2026-09-14
 summary: "Crust apocalíptico com pitada de death metal old school, cru, agressivo e sem concessões."
 summaryEn: "Apocalyptic crust with a touch of old-school death metal, raw, aggressive, and uncompromising."
 band: "Deviare"
-cover: "resenha-deviare-age-of-madness.jpg"
+cover: "resenha-deviare-age-of-madness.webp"
 ---
 
 <div data-lang-content="pt">

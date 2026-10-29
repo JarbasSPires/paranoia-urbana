@@ -5,7 +5,7 @@ date: 2004-01-01
 summary: "Crust/stenchcore de Montreal (2004–2009): d-beat, riffs de thrash e atmosfera apocalíptica na tradição de Amebix e Sacrilege."
 summaryEn: "Montreal crust/stenchcore (2004–2009): d-beat, thrash riffs, and an apocalyptic atmosphere in the tradition of Amebix and Sacrilege."
 band: "After the Bombs"
-cover: "classica-after-the-bombs.png"
+cover: "classica-after-the-bombs.webp"
 ---
 
 <div data-lang-content="pt">

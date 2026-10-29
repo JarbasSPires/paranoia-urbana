@@ -5,7 +5,7 @@ date: 2026-07-01
 summary: "Crust punk com uma pitada de metal — a Profane Existence apresentando uma banda incrível."
 summaryEn: "Crust punk with a touch of metal — Profane Existence introducing an incredible band."
 band: "Flower"
-cover: "resenha-flower.png"
+cover: "resenha-flower.webp"
 links:
   - label: "Bandcamp"
     url: "https://flowernewyorkcity.bandcamp.com/album/hardly-a-dream"

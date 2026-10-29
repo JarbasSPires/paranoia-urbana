@@ -5,7 +5,7 @@ date: 1999-01-01
 summary: "Anarco/peacepunk de Arizona (1999–2006), letras políticas, direitos dos animais e fortes influências folclóricas."
 summaryEn: "Arizona anarcho/peace-punk (1999–2006), political lyrics, animal rights, and strong folk influences."
 band: "Contravene"
-cover: "classica-contravene.png"
+cover: "classica-contravene.webp"
 ---
 
 <div data-lang-content="pt">

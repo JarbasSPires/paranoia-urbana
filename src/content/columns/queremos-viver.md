@@ -4,7 +4,7 @@ titleEn: "We Want to Live, Not Just Survive"
 date: 2026-07-01
 summary: "Poema de encerramento da Edição #1."
 summaryEn: "Edition #1's closing poem."
-cover: "poema-encerramento.png"
+cover: "poema-encerramento.webp"
 ---
 
 <div data-lang-content="pt">

@@ -4,7 +4,7 @@ titleEn: "Viver Para Lutar — Punk, Anarchism and Feminism"
 date: 2026-07-01
 summary: "Episódio 1: as minas dos anos 90 — punk, anarquismo e feminismo no Brasil."
 summaryEn: "Episode 1: the girls of the 90s — punk, anarchism, and feminism in Brazil."
-cover: "documentarios.png"
+cover: "documentarios.webp"
 links:
   - label: "Assistir no YouTube"
     url: "https://www.youtube.com/watch?v=nMRd4nh3tm0&ab_channel=AnarcopunkORG"

@@ -5,7 +5,7 @@ date: 1986-01-01
 summary: "Formados em 1986 na Inglaterra, os mestres do death metal bélico com riffs monumentais e peso avassalador."
 summaryEn: "Formed in 1986 in England, the masters of war-themed death metal with monumental riffs and crushing weight."
 band: "Bolt Thrower"
-cover: "classica-bolt-thrower.png"
+cover: "classica-bolt-thrower.webp"
 ---
 
 <div data-lang-content="pt">

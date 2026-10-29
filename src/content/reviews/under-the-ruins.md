@@ -5,7 +5,7 @@ date: 2026-09-11
 summary: "Crust agressivo e visceral do DF desde 2006, entre d-beat, hardcore, grindnoise e metalpunk."
 summaryEn: "Aggressive, visceral crust from the DF since 2006, between d-beat, hardcore, grindnoise, and metalpunk."
 band: "Under the Ruins"
-cover: "banda-under-the-ruins.jpg"
+cover: "banda-under-the-ruins.webp"
 ---
 
 <div data-lang-content="pt">
@@ -17,7 +17,7 @@ banda combina a sujeira e a urgência do d-beat e do hardcore com a
 aspereza do grindnoise e do metalpunk, criando um som direto, caótico e
 sem concessões.
 
-<img src="/covers/under-the-ruins-live.jpg" alt="Under the Ruins" style="max-width:100%" />
+<img src="/covers/under-the-ruins-live.webp" alt="Under the Ruins" style="max-width:100%" />
 
 Influenciada pelo hardcore nacional, especialmente por nomes como Ratos
 de Porão, e pela tradição japonesa do crust e do d-beat, representada
@@ -66,7 +66,7 @@ band combines the filth and urgency of d-beat and hardcore with the
 harshness of grindnoise and metalpunk, creating a sound that's direct,
 chaotic, and uncompromising.
 
-<img src="/covers/under-the-ruins-live.jpg" alt="Under the Ruins" style="max-width:100%" />
+<img src="/covers/under-the-ruins-live.webp" alt="Under the Ruins" style="max-width:100%" />
 
 Influenced by Brazilian hardcore, especially names like Ratos de Porão,
 and by the Japanese tradition of crust and d-beat represented by bands

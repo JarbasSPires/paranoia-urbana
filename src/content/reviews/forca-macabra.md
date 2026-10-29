@@ -5,7 +5,7 @@ date: 2026-09-17
 summary: "Thrashcore finlandês desde 1991, cantado em português e movido pela paixão pelo punk e metal brasileiros dos anos 80."
 summaryEn: "Finnish thrashcore since 1991, sung in Portuguese and driven by a passion for 1980s Brazilian punk and metal."
 band: "Força Macabra"
-cover: "banda-forca-macabra.png"
+cover: "banda-forca-macabra.webp"
 ---
 
 <div data-lang-content="pt">
