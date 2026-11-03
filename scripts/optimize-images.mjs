@@ -9,7 +9,7 @@ const ROOT = new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '
 // Largura máxima por pasta: capa da página, card da home e fundo do hero.
 const FOLDERS = [
   { dir: 'public/covers', width: 1400 },
-  { dir: 'public/pulse', width: 640, overrides: { 'hero.png': 1920 } },
+  { dir: 'public/pulse', width: 640, overrides: { hero: 1920 } },
 ];
 const CONVERTIBLE = new Set(['.png', '.jpg', '.jpeg', '.webp']);
 const QUALITY = 80;
@@ -28,7 +28,7 @@ for (const { dir, width, overrides = {} } of FOLDERS) {
     const out = join(abs, outName);
     const input = await readFile(src);
     const meta = await sharp(input).metadata();
-    const maxWidth = overrides[file] ?? width;
+    const maxWidth = overrides[basename(file, extname(file))] ?? width;
     // Já otimizada: WebP dentro da largura máxima.
     if (ext === '.webp' && (meta.width ?? 0) <= maxWidth) continue;
 
